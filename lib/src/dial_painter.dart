@@ -150,7 +150,7 @@ class DialPainter extends CustomPainter {
         textDirection: TextDirection.ltr,
         text: TextSpan(
           text: hourNumbers![hourNumberIndex],
-          style: TextStyle(fontSize: fontSize, color: this.hourNumberColor, fontWeight: FontWeight.bold, fontFamily: 'Roboto'),
+          style: TextStyle(fontSize: fontSize, color: this.hourNumberColor, fontWeight: FontWeight.bold, fontFamily: 'Playwrite Italia Moderna'),
         ),
       )..layout();
 
