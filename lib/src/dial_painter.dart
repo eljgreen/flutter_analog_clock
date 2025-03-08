@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'analog_clock_listener.dart';
 import 'analog_clock_util.dart';
@@ -150,7 +151,7 @@ class DialPainter extends CustomPainter {
         textDirection: TextDirection.ltr,
         text: TextSpan(
           text: hourNumbers![hourNumberIndex],
-          style: TextStyle(fontSize: fontSize, color: this.hourNumberColor, fontWeight: FontWeight.bold, fontFamily: 'Playwrite Italia Moderna'),
+          style: GoogleFonts.roboto(fontSize: fontSize, color: this.hourNumberColor, fontWeight: FontWeight.bold),
         ),
       )..layout();
 
