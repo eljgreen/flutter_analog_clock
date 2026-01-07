@@ -85,8 +85,7 @@ class HandPainter extends CustomPainter {
         centerPointWidthFactor > 0.0) {
       Paint centerPointPaint = Paint()
         ..strokeWidth =
-            math.max(hourWidth, math.max(minuteWidth, secondWidth)) *
-                2.0 *
+            listener.dialRadius * 0.1 *
                 centerPointWidthFactor
         ..strokeCap = StrokeCap.round
         ..color = this.centerPointColor!;
