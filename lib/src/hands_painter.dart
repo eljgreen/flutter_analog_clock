@@ -74,7 +74,7 @@ class HandPainter extends CustomPainter {
       secondWidth = listener.markingRadius * 0.01 * secondHandWidthFactor;
       _drawSecondHand(
         canvas,
-        listener.markingRadius * secondHandLengthFactor,
+        listener.dialRadius * 0.975 * secondHandLengthFactor,
         secondWidth,
       );
     }
