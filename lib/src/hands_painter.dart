@@ -71,7 +71,7 @@ class HandPainter extends CustomPainter {
         secondHandWidthFactor > 0.0 &&
         secondHandColor != null &&
         secondHandColor != Colors.transparent) {
-      secondWidth = listener.markingRadius * 0.01 * secondHandWidthFactor;
+      secondWidth = (listener.dialRadius * 0.65 * 0.09 * hourHandWidthFactor) * (1/3) * secondHandWidthFactor;
       _drawSecondHand(
         canvas,
         listener.dialRadius * 0.975 * secondHandLengthFactor,
