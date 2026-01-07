@@ -63,7 +63,7 @@ class HandPainter extends CustomPainter {
       minuteWidth = listener.hourNumberRadius * 0.03 * minuteHandWidthFactor;
       _drawMinuteHand(
         canvas,
-        listener.hourNumberRadius * minuteHandLengthFactor,
+        listener.dialRadius * 0.95 * minuteHandLengthFactor,
         minuteWidth,
       );
     }
